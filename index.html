@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Criar conta</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>Somos referência em cortar grama na região de São Paulo</h1>
+    <img src="trator.jpg" class="trator"/>
+    <div class="container">
+        <a id="myBtn"><span style="font-size: 25px;">⋙</span> Já tenho conta</a>
+        <br>
+        <a id="myBtn1"><span style="font-size: 25px;">⋙</span> Sou novo, preciso criar minha conta!</a>
+    </div>
+    <div class="copy">
+        <h3>Developed by Kelvin Henrique - 2021</h3>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">x</span>
+            <div class="login">
+                <h2>Sistema Login</h2>
+                <form action="#" method="post">
+                    <label for="">Login: <input type="text" class="ss"></label>
+                    <label for="">Senha: <input type="text" class="ss"></label>
+                    <label for="um" class="dois"><input type="checkbox" id="um"/>Manter-me conectado</label>
+                    <br>
+                    <input type="reset" value="LIMPAR" class="btns">
+                    <input type="submit" value="ENTRAR" class="btns">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="myModal1" class="modal1">
+        <div class="modal1-content">
+            <span class="close1">x</span>
+            <div class="login">
+                <h2>Tela de Cadastro</h2>
+                <form action="#" method="post">
+                    <label for="">Nome: <input type="text" class="ss" placeholder="Insira seu nome"></label>
+                    <label for="">CEP: <input type="text" class="ss" placeholder="00.000-00"></label>
+                    <label for="">Login: <input type="text" class="ss" placeholder="Insira um login"></label>
+                    <label for="">Senha: <input type="password" class="ss" placeholder="Insira uma senha de 8 digitos" maxlength="8"></label>
+                    <input type="reset" value="LIMPAR" class="btns">
+                    <input type="submit" value="ENTRAR" class="btns">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+    if (event.target == modal) {
+    modal.style.display = "none";
+    }
+    }
+</script>
+<script>
+    var modal1 = document.getElementById("myModal1");
+    var btn1 = document.getElementById("myBtn1");
+    var span = document.getElementsByClassName("close1")[0];
+
+    btn1.onclick = function() {
+    modal1.style.display = "block";
+    }
+
+    span.onclick = function() {
+    modal1.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+    if (event.target == modal1) {
+    modal1.style.display = "none";
+    }
+    }
+</script>
+
+</body>
+</html>
